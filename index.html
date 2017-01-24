@@ -6,13 +6,19 @@
     <link rel="icon" type="image/gif/png" href="http://res.cloudinary.com/rlee0525/image/upload/c_scale,h_125,w_125/v1485222385/Logomakr_0R164V_ewmfp2.png">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link href="./css/style.scss" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.scss" />
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   </head>
   <body>
     <div id="splash">
       <img id="logo" src="http://res.cloudinary.com/rlee0525/image/upload/c_scale,h_125,w_125/v1485222385/Logomakr_0R164V_ewmfp2.png">
       <h1>Piano Piano<br/>Revolution</h1>
       <button id="start">Start</button>
+    </div>
+
+    <div id="game-canvas">
+      <canvas id="my-canvas"></canvas>
     </div>
 
     <nav>
@@ -22,5 +28,16 @@
         <a target="_blank" href="http://www.raymondlee.io/"><i class="fa fa-user" aria-hidden="true"></i></a>
       </div>
     </nav>
+
+    <script>
+      $("#game-canvas").hide();
+
+      $("#start").click(function() {
+        $("#splash").hide();
+        $("#game-canvas").show();
+      });
+    </script>
+
+    <script type="application/javascript" src="lib/bundle.js"></script>
   </body>
 </html>

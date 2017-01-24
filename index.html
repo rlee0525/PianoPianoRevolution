@@ -29,6 +29,10 @@
       <canvas id="piano-canvas"></canvas>
     </div>
 
+    <div id="score">
+      <h1>Score: 0</h1>
+    </div>
+
     <nav>
       <div id="links">
         <a target="_blank" href="https://github.com/rlee0525/PianoRevolution"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -39,10 +43,12 @@
 
     <script>
       $("#my-canvas").hide();
+      $('#score').hide();
 
       $("#start").click(function() {
         $("#splash").hide();
         $("#my-canvas").show();
+        $('#score').show();
         moonlight.play();
       });
     </script>

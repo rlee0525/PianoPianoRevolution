@@ -64,6 +64,15 @@ nav {
 
 /*Canvas*/
 
-canvas {
+#piano-canvas {
+  position: absolute;
   background: black;
+  z-index: 0;
+}
+
+#game-canvas {
+  position: absolute;
+  left: 50px;
+  background: white;
+  z-index: 1;
 }

@@ -11,14 +11,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   </head>
   <body>
-    <div id="splash">
+    <!-- <div id="splash">
       <img id="logo" src="http://res.cloudinary.com/rlee0525/image/upload/c_scale,h_125,w_125/v1485222385/Logomakr_0R164V_ewmfp2.png">
       <h1>Piano Piano<br/>Revolution</h1>
       <button id="start">Start</button>
-    </div>
+    </div> -->
 
-    <div id="game-canvas">
-      <canvas id="my-canvas"></canvas>
+    <div id="my-canvas">
+      <canvas id="game-canvas"></canvas>
+      <canvas id="piano-canvas"></canvas>
     </div>
 
     <nav>
@@ -29,14 +30,14 @@
       </div>
     </nav>
 
-    <script>
-      $("#game-canvas").hide();
+    <!-- <script>
+      $("#my-canvas").hide();
 
       $("#start").click(function() {
         $("#splash").hide();
-        $("#game-canvas").show();
+        $("#my-canvas").show();
       });
-    </script>
+    </script> -->
 
     <script type="application/javascript" src="lib/bundle.js"></script>
   </body>

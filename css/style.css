@@ -15,7 +15,7 @@ button:hover {
 
 /*splash container*/
 
-#splash > img {
+#splash > div > img {
   display: flex;
   position: absolute;
   left: calc(50% - 280px);
@@ -25,7 +25,7 @@ button:hover {
   color: white;
 }
 
-#splash > h1 {
+#splash > div > h1 {
   display: flex;
   position: absolute;
   left: calc(50% - 105px);
@@ -48,6 +48,10 @@ button:hover {
   padding: 5px 10px;
 }
 
+#splash > button:hover {
+  opacity: 0.7;
+}
+
 /*Navigation to my links*/
 
 nav {
@@ -64,27 +68,11 @@ nav {
 
 /*Canvas*/
 
-#piano-canvas {
+#game-canvas {
   position: absolute;
   background: url("../images/moon.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   z-index: 0;
-}
-
-#score {
-  position: absolute;
-  right: calc(100% - 1100px);
-  top: calc(15% - 88px);
-  color: white;
-  font-size: 20px;
-  font-family: "Permanent Marker";
-}
-
-#game-canvas {
-  position: absolute;
-  left: 50px;
-  background: black;
-  z-index: 1;
 }

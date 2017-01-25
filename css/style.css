@@ -64,7 +64,7 @@ nav {
 
 /*Canvas*/
 
-#piano-canvas {
+#game-canvas {
   position: absolute;
   background: url("../images/moon.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -80,11 +80,4 @@ nav {
   color: white;
   font-size: 20px;
   font-family: "Permanent Marker";
-}
-
-#game-canvas {
-  position: absolute;
-  left: 50px;
-  background: black;
-  z-index: 1;
 }

@@ -31,9 +31,10 @@
 
     <nav>
       <div id="links">
+        <a href="http://www.raymondlee.io/PianoPianoRevolution" id="replay"><i class="fa fa-repeat" aria-hidden="true"></i></a>
         <a id="mute"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
         <a id="unmute"><i class="fa fa-volume-off" aria-hidden="true"></i></a>
-        <a target="_blank" href="https://github.com/rlee0525/PianoRevolution"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://github.com/rlee0525/PianoPianoRevolution"><i class="fa fa-github" aria-hidden="true"></i></a>
         <a target="_blank" href="https://www.linkedin.com/in/rlee0525"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
         <a target="_blank" href="http://www.raymondlee.io/"><i class="fa fa-user" aria-hidden="true"></i></a>
       </div>
@@ -41,13 +42,13 @@
 
     <script>
       $("#my-canvas").hide();
-      $('#score').hide();
       $('#unmute').hide();
+      $('#replay').hide();
 
       $("#start").click(function() {
         $("#splash").hide();
         $("#my-canvas").show();
-        $('#score').show();
+        $('#replay').show();
       });
 
       $('#mute').click(function() {

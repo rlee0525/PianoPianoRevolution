@@ -32,6 +32,7 @@
 
     <nav>
       <div id="links">
+        <a id="faster"><i class="fa fa-fast-forward" aria-hidden="true"></i></a>
         <a href="http://www.raymondlee.io/PianoPianoRevolution" id="replay"><i class="fa fa-repeat" aria-hidden="true"></i></a>
         <a id="mute"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
         <a id="unmute"><i class="fa fa-volume-off" aria-hidden="true"></i></a>
@@ -45,11 +46,13 @@
       $("#my-canvas").hide();
       $('#unmute').hide();
       $('#replay').hide();
+      $('#faster').hide();
 
       $("#start").click(function() {
         $("#splash").hide();
         $("#my-canvas").show();
         $('#replay').show();
+        $('#faster').show();
       });
 
       $('#mute').click(function() {

@@ -16,6 +16,7 @@
       window.moonlight = new Howl({
         src: ['./lib/moonlight.mp3']
       });
+      window.moonlight.play();
     </script>
 
     <div id="splash">
@@ -26,11 +27,16 @@
 
     <div id="my-canvas">
       <canvas id="game-canvas"></canvas>
+      <canvas id="fireworks-canvas"></canvas>
     </div>
 
     <nav>
       <div id="links">
-        <a target="_blank" href="https://github.com/rlee0525/PianoRevolution"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a id="faster"><i class="fa fa-fast-forward" aria-hidden="true"></i></a>
+        <a href="http://www.raymondlee.io/PianoPianoRevolution" id="replay"><i class="fa fa-repeat" aria-hidden="true"></i></a>
+        <a id="mute"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
+        <a id="unmute"><i class="fa fa-volume-off" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://github.com/rlee0525/PianoPianoRevolution"><i class="fa fa-github" aria-hidden="true"></i></a>
         <a target="_blank" href="https://www.linkedin.com/in/rlee0525"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
         <a target="_blank" href="http://www.raymondlee.io/"><i class="fa fa-user" aria-hidden="true"></i></a>
       </div>
@@ -38,14 +44,28 @@
 
     <script>
       $("#my-canvas").hide();
-      $('#score').hide();
+      $('#unmute').hide();
+      $('#replay').hide();
+      $('#faster').hide();
 
       $("#start").click(function() {
         $("#splash").hide();
         $("#my-canvas").show();
-        $('#score').show();
-        window.moonlight.play();
+        $('#replay').show();
+        $('#faster').show();
       });
+
+      $('#mute').click(function() {
+        $('#mute').hide();
+        window.moonlight.pause();
+        $('#unmute').show();
+      });
+
+      $('#unmute').click(function() {
+        $('#unmute').hide();
+        window.moonlight.play();
+        $('#mute').show();
+      })
     </script>
     <script type="application/javascript" src="lib/bundle.js"></script>
   </body>

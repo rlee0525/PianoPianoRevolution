@@ -4,7 +4,7 @@
 
 Piano Piano Revolution is an adaptation of Dance Dance Revolution.  The live version can be found at [Piano Piano Revolution][PPR].
 
-[PPR]: http://www.shufffle.space
+[PPR]: http://www.raymondlee.io/PianoPianoRevolution
 
 In the original DDR, players stand on a dance platform or stage and hit colored arrows laid out in a cross with their feet to musical and visual cues.  Players are judged by how well they time their dance to the patterns presented to them.
 ![view](docs/main.png)

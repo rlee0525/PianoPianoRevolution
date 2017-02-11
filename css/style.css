@@ -40,13 +40,23 @@ button:hover {
   color: white;
 }
 
+#splash > div > p {
+  display: flex;
+  position: absolute;
+  left: calc(50% - 275px);
+  top: calc(53% - 15px);
+  font-family: "Permanent Marker";
+  font-size: 20px;
+  color: white;
+}
+
 #splash > button {
   border: none;
   border-radius: 15px;
   background-color: white;
   position: absolute;
   left: calc(50% - 52px);
-  bottom: calc(50% - 120px);
+  bottom: calc(48% - 110px);
   font-family: "Permanent Marker";
   font-size: 24px;
   color: #263238;
@@ -67,8 +77,8 @@ nav {
 
 #links > a {
   color: white;
-  font-size: 40px;
-  padding: 15px;
+  font-size: 25px;
+  padding: 10px;
 }
 
 /*Canvas*/

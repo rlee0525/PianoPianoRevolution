@@ -4,6 +4,16 @@ html, body, h1, div, nav, a {
 }
 
 body {
+  background-color: black;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*splash container*/
+
+#splash {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -13,12 +23,6 @@ body {
   background-size: cover;
   z-index: 0;
 }
-
-button:hover {
-  cursor: pointer;
-}
-
-/*splash container*/
 
 #splash > div > img {
   display: flex;
@@ -91,7 +95,8 @@ nav {
 
 #fireworks-canvas {
   position: absolute;
-  background: url("../images/moon.jpg") no-repeat center center fixed;
+  background: black;
+  /*background: url("../images/moon.jpg") no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
